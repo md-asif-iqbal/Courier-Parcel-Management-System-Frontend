@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Courier & Parcel Management System
 
-## Getting Started
+A full-stack web application built with Next.js 15 + Tailwind CSS on the frontend, and Express.js + MongoDB on the backend, featuring real-time updates via Socket.IO and role-based access for Customers, Agents, and Admins.
 
-First, run the development server:
+---
+
+## Table of Contents
+
+1. [Tech Stack](#tech-stack)  
+2. [Prerequisites](#prerequisites)  
+3. [Installation](#installation)  
+   1. [Clone the Repo](#clone-the-repo)  
+   2. [Backend Setup](#backend-setup)  
+   3. [Frontend Setup](#frontend-setup)  
+4. [Environment Variables](#environment-variables)  
+5. [Running the Application](#running-the-application)  
+   1. [Backend](#backend)  
+   2. [Frontend](#frontend)  
+6. [Project Structure](#project-structure)  
+7. [Features](#features)  
+   - [Authentication & Roles](#authentication--roles)  
+   - [Customer](#customer)  
+   - [Agent](#agent)  
+   - [Admin](#admin)  
+   - [Real-Time Updates](#real-time-updates)  
+   - [Reports & Analytics](#reports--analytics)  
+8. [API Endpoints](#api-endpoints)  
+9. [Socket.IO Events](#socketio-events)  
+10. [Contributing](#contributing)  
+11. [License](#license)
+
+---
+
+## Tech Stack
+
+- **Frontend:** Next.js 15 · React · Tailwind CSS  
+- **Backend:** Node.js · Express.js · MongoDB (Mongoose)  
+- **Real-Time:** Socket.IO  
+- **Reporting:** CSV (built-in), ExcelJS, PDFKit  
+- **Auth:** JWT (jsonwebtoken) + bcryptjs  
+
+---
+
+## Prerequisites
+
+- Node.js v18+ and npm  
+- MongoDB instance (local or cloud)  
+
+---
+
+## Installation
+
+### Clone the Repo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/your-username/courier-parcel-management.git
+cd courier-parcel-management
