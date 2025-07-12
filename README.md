@@ -1,5 +1,8 @@
 # Courier & Parcel Management System
 
+## user : admin1@gmail.com
+## password: Asif@khan
+
 A full-stack web application built with Next.js 15 + Tailwind CSS on the frontend, and Express.js + MongoDB on the backend, featuring real-time updates via Socket.IO and role-based access for Customers, Agents, and Admins.
 
 ---
